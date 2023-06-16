@@ -1,6 +1,9 @@
 // https://practice.geeksforgeeks.org/problems/boundary-traversal-of-binary-tree/1
 
-
+class Solution {
+public:
+stack<int>st;
+vector<int>ans;
 void left(Node *root)
 {
     if(root->left==NULL && root->right==NULL) return;
